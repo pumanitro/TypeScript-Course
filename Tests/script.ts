@@ -23,3 +23,20 @@ enum Color{
 
 let myColor: Color = Color.Gray;
 console.log(myColor);
+
+let job : any = "Dev ninja";
+console.log(job);
+job = {firstJob: 'Front-developer'};
+console.log(job);
+
+function returnMyName(): string{
+    return myName;
+}
+console.log(returnMyName());
+
+function sayHello(): void{
+    console.log("Hello!");
+}
+
+let canBeNull = 22;
+//canBeNull = null;
