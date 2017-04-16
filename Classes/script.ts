@@ -86,3 +86,8 @@ let newProject = new ITProject();
 console.log(newProject);
 newProject.changeName("Super IT project");
 console.log(newProject);
+
+
+class Test{
+    private constructor(public readonly name:string){}
+}
