@@ -6,7 +6,7 @@ type TBankAccount = { money: number, deposit: (value: number) => void};
 
 let bankAccount : TBankAccount = {
     money: 2000,
-    deposit: function(value:number) : void{
+    deposit(value:number) : void{
         this.money += value;
     }
 };

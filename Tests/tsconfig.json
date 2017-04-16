@@ -4,6 +4,8 @@
         "target": "es5",
         "noImplicitAny": false,
         "sourceMap": false,
-        "strictNullChecks": true
+        //New options :
+        "strictNullChecks": true,
+        "noUnusedParameters": true
     }
 }
