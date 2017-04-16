@@ -31,3 +31,4 @@ console.log(result1, result2, result3);
 let scientist: {firstName: string, experience: number} = {firstName: "Will", experience: 12};
 let {firstName: firstName, experience: experience} = scientist;
 console.log(firstName, experience);
+
