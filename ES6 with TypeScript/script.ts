@@ -14,20 +14,20 @@ greet();
 greet("Anna");
 
 // Exercise 3 - Isn't there a shorter way to get all these Values?
-let numbers = [-3, 33, 38, 5];
+let numbers: number[] = [-3, 33, 38, 5];
 console.log(Math.min(...numbers));
 
 // Exercise 4 - I have to think about Exercise 3 ...
-let newArray = [55, 20];
+let newArray: number[] = [55, 20];
 Array.prototype.push(...newArray);
 console.log(newArray);
 
 // Exercise 5 - That's a well-constructed array.
-let testResults = [3.89, 2.99, 1.38];
+let testResults: number[] = [3.89, 2.99, 1.38];
 let [result1,result2,result3] = testResults;
 console.log(result1, result2, result3);
 
 // Exercise 6 - And a well-constructed object!
-let scientist = {firstName: "Will", experience: 12};
+let scientist: {firstName: string, experience: number} = {firstName: "Will", experience: 12};
 let {firstName: firstName, experience: experience} = scientist;
 console.log(firstName, experience);
