@@ -20,6 +20,17 @@ class MyMap <U>{
         })
     }
 
+    getItem(key: string){
+        this.map.forEach((el) => {
+            if(el.key === key)
+                return el.value;
+        });
+
+        return "Not found";
+    }
+
+
+
 
 }
 
