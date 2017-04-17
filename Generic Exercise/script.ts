@@ -12,7 +12,7 @@ class MyMap <U>{
     map : {
         key: string;
         value: U;
-    }[];
+    }[]=[];
 
     setItem(key: string, item: U){
         this.map.push({key: key,
@@ -34,20 +34,13 @@ class MyMap <U>{
     }
 
     printMap(): void{
-        this.map.forEach((el) => console.log(`Key: ${el.key}, Value: ${el.value}`);
+        this.map.forEach((el) => console.log(`Key: ${el.key}, Value: ${el.value}`));
     }
 
 
 }
 
-setItem(key: string, item: T) // should create a new key-value pair
-
-getItem(key: string) // should retrieve the value of the provided key
-clear() // should remove all key-value pairs
-printMap() // should output key-value pairs
-The map should be usable like shown below:
-
-    const numberMap = new MyMap<number>();
+const numberMap = new MyMap<number>();
 numberMap.setItem('apples', 5);
 numberMap.setItem('bananas', 10);
 numberMap.printMap();
