@@ -2,6 +2,27 @@
  * Created by puman on 17.04.2017.
  */
 
+/*
+ Create a generic Map (an Object like an Array, but instead with Key-Value Pairs). The key will always be a string.
+ Let's keep it simple and only add the following methods to the Map:
+ */
+
+class MyMap <U>{
+
+    map : {
+        key: string;
+        value: U;
+    }[];
+
+    setItem(key: string, item: U){
+        this.map.push({key: key,
+            value: item
+        })
+    }
+
+
+}
+
 setItem(key: string, item: T) // should create a new key-value pair
 
 getItem(key: string) // should retrieve the value of the provided key
