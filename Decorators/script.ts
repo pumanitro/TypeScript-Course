@@ -78,3 +78,26 @@ project.calcBudget = function () {
 project.calcBudget();
 project.projectName = "blue";
 console.log(project.projectName);
+
+function printInfo(target : any, methodName: string, paramIndex: number){
+
+    console.log("Target: ",target);
+    console.log("Method name: ",methodName);
+    console.log("Param index: ",paramIndex);
+
+}
+
+class Course{
+    name:string;
+
+    constructor(name: string){
+        this.name = name;
+    }
+
+    printStudentNumbers(mode: string, @printInfo printAll: boolean){
+        if(printAll)
+            console.log(10000);
+        else
+            console.log(2000);
+    }
+}
