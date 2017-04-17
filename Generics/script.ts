@@ -19,4 +19,17 @@ console.log(betterEcho("Max").length);
 console.log(betterEcho<number>(27));
 console.log(betterEcho({name: "Max", age: 27}));
 
+//Built-in Generics
+
+const testResults: Array<number> = [1,2];
+testResults.push(3);
+//testResults.push("test");
+console.log(testResults);
+
+// Arrays
+function printAll<T>(args: T[]){
+    args.forEach((element) => console.log(element));
+}
+
+printAll<string>(["Apple","Banana"]);
 
