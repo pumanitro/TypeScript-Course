@@ -33,3 +33,7 @@ function printAll<T>(args: T[]){
 
 printAll<string>(["Apple","Banana"]);
 
+// Generic Types
+const echo2: <T>(date: T) => T = betterEcho;
+
+console.log(echo2<string>("Something"));
