@@ -54,3 +54,17 @@ myDoubleFunction = function(value1: number, value2: number){
 };
 
 console.log(myDoubleFunction(3,4));
+
+interface AgedPerson extends NamedPerson{
+    age: number;
+}
+
+const oldPerson: AgedPerson = {
+    age:27,
+    firstName: "Max",
+    greet(lastName: string){
+        console.log("Hay!");
+    }
+};
+
+console.log(oldPerson);
