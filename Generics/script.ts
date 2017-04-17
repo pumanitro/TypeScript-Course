@@ -37,3 +37,17 @@ printAll<string>(["Apple","Banana"]);
 const echo2: <T>(date: T) => T = betterEcho;
 
 console.log(echo2<string>("Something"));
+
+//Generic Class
+class SimpleMath<T extends number | string >{
+    baseValue : T;
+    multiplyValue : T;
+    calculate(): number{
+        return +this.baseValue * +this.multiplyValue;
+    }
+}
+
+const simpleMath = new SimpleMath<string>();
+simpleMath.baseValue = "10";
+simpleMath.multiplyValue = "20";
+console.log(simpleMath.calculate());
