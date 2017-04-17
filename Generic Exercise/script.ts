@@ -29,7 +29,13 @@ class MyMap <U>{
         return "Not found";
     }
 
+    clear(): void{
+        this.map.length = 0;
+    }
 
+    printMap(): void{
+        this.map.forEach((el) => console.log(`Key: ${el.key}, Value: ${el.value}`);
+    }
 
 
 }
